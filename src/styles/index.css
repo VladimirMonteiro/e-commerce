@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+nav {
+  height: 80px;
+}
+
+.custom-gradient {
+  background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
+}
+
+.heroContainer {
+  width: 100%;
+  height: 100vh;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.form input {
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #b10de9 0%, #550dc8 100%);
+}
+
+.filterForm {
+  max-width: 800px;
+  margin-top: 120px;
+}
+
+.form-floating > .form-control.form-control-sm {
+  height: 30px;
+}
+
+.form-control:focus {
+  border-color: #6610f2;
+  box-shadow: 0 0 0 0.2rem rgba(102, 16, 242, 0.25);
+}
+
+/*PRODUTOS*/
+#produtos-card-container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* CARD*/
+.card {
+  width: 280px;
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card h2,
+.card p,
+.card .price {
+  padding: 0 5px;
+  text-align: center;
+}
+
+.card p {
+  text-align: justify;
+  padding: 5px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #6610f2;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card .btn-buy {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: linear-gradient(90deg, #6610f2 0%, #c90dfd 100%);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card .btn-buy:hover {
+  background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
+  transform: scale(1.05);
+}
+
+.custom-gradient {
+  background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffffffcc;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer .container {
+  max-width: 900px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    height: 50vh;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
