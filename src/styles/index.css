@@ -123,10 +123,10 @@ nav {
   margin-bottom: 10px;
 }
 
-.card .btn-buy {
+.card .btn-buy, .cartBtn {
   display: block;
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 10px 0;
   background: linear-gradient(90deg, #6610f2 0%, #c90dfd 100%);
   color: white;
@@ -137,7 +137,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-.card .btn-buy:hover {
+.card .btn-buy:hover, .cartBtn:hover {
   background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
   transform: scale(1.05);
 }

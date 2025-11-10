@@ -52,7 +52,8 @@ nav {
 }
 
 .btn-buy,
-.btn {
+.btn,
+.cartBtn{
   display: block;
   width: 80%;
   margin: 0 auto;
@@ -67,7 +68,8 @@ nav {
 }
 
 .btn-buy:hover,
-.btn:hover {
+.btn:hover,
+.cartBtn:hover {
   background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
   transform: scale(1.05);
 }
