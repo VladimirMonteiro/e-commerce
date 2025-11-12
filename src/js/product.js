@@ -32,7 +32,10 @@ fetch(`https://dummyjson.com/products/category/${categoria}`)
           <h2>${item.title}</h2>
           <p>${item.description}</p>
           <div class="price">Preço: R$ ${item.price}</div>
-          <button class="btn-buy" data-id="${item.id}">Comprar</button>
+          <div>
+            <button class="btn-buy" data-id="${item.id}">Comprar</button>
+            <i class="bi bi-cart4 cartBtn" data-id="${item.id}"></i>
+          </div>
         </div>`;
     }
 

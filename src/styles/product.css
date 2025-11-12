@@ -51,12 +51,25 @@ nav {
   margin-bottom: 10px;
 }
 
+.cartBtn {
+  font-size: 25px;
+  color: #ccccff;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.cartBtn:hover {
+  color: #6610f2;
+  transform: scale(1.2);
+}
+
 .btn-buy,
-.btn,
-.cartBtn{
+.btn{
   display: block;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
+  margin-left: 30px;
   padding: 10px 0 !important;
   background: linear-gradient(90deg, #6610f2 0%, #c90dfd 100%);
   color: white !important;
@@ -68,8 +81,7 @@ nav {
 }
 
 .btn-buy:hover,
-.btn:hover,
-.cartBtn:hover {
+.btn:hover {
   background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
   transform: scale(1.05);
 }
