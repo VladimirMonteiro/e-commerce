@@ -33,10 +33,10 @@ function renderizarProdutos(lista) {
         <h5>${item.title}</h5>
         <p class="small">${item.description}</p>
         <div class="price fw-bold mb-2">Preço: R$ ${item.price}</div>
-          <button class="btn-buy" data-id="${item.id}">Comprar</button>
-          <button class="cartBtn" data-id="${item.id}">
-            <i class="bi bi-cart-fill me-2"></i> Adicionar ao carrinho
-          </button>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn-buy" data-id="${item.id}">Comprar</button>
+            <i class="bi bi-cart4 cartBtn" data-id="${item.id}"></i>
+          </div>
       </div>`;
   });
 

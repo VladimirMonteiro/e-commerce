@@ -123,7 +123,27 @@ nav {
   margin-bottom: 10px;
 }
 
-.card .btn-buy, .cartBtn {
+.cartBtn {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 25px;
+  
+  color: #ccccff;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cartBtn:hover {
+  color: #6610f2;
+  transform: scale(1.2);
+}
+
+.card .btn-buy {
   display: block;
   width: 80%;
   margin: 10px auto;
@@ -137,7 +157,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-.card .btn-buy:hover, .cartBtn:hover {
+.card .btn-buy:hover{
   background: linear-gradient(90deg, #c90dfd 0%, #6610f2 100%);
   transform: scale(1.05);
 }
