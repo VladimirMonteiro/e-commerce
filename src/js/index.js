@@ -60,12 +60,9 @@ function renderizarProdutos(lista) {
       const produto = produtos.find((p) => p.id == id);
       let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-      const jaExiste = carrinho.some((p) => p.id === produto.id);
-      if (!jaExiste) {
-        carrinho.push(produto);
-        localStorage.setItem("carrinho", JSON.stringify(carrinho));
-        atualizarBadgeCarrinho(); 
-      }
+      carrinho.push(produto);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      atualizarBadgeCarrinho();
 
       // Toast Bootstrap
       const toastEl = document.getElementById("liveToast");
