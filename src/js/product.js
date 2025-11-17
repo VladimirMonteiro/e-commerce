@@ -51,6 +51,29 @@ fetch(`https://dummyjson.com/products/category/${categoria}`)
         window.location.href = "product.html";
       });
     });
+
+    // Evento do botão "Adicionar ao carrinho"
+  document.querySelectorAll(".cartBtn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-id");
+      const produto = produtos.find((p) => p.id == id);
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+      carrinho.push(produto);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      atualizarBadgeCarrinho();
+
+      // Toast Bootstrap
+      const toastEl = document.getElementById("liveToast");
+      const toastBody = toastEl.querySelector(".toast-body");
+      toastBody.textContent = `✅ ${produto.title} adicionado ao carrinho!`;
+
+      const toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  });
+
+    
   })
   .catch((error) => {
     console.error("Erro ao carregar produtos:", error);
@@ -81,7 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "<p>Nenhum produto selecionado.</p>";
   }
 
-  myModal.addEventListener("shown.bs.modal", () => {
-    myInput.focus();
-  });
+  if (myModal && myInput) {
+    myModal.addEventListener("shown.bs.modal", () => {
+      myInput.focus();
+    });
+  }
 });
