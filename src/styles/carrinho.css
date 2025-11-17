@@ -2,8 +2,14 @@ body {
   background-color: #f8f9fa;
 }
 
+main {
+  min-height: 80vh;
+  padding: 20px 0;
+}
+
 .cardContainer {
     width: 100%;
+    
 }
 
 .card {
@@ -27,4 +33,34 @@ body {
 
 .btn-success:hover {
   background-color: #1b4332;
+}
+
+
+.footer {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #ffffffcc;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer .container {
+  max-width: 900px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
